@@ -117,7 +117,7 @@ contract AMM is AccessControl {
             ERC20(tokenB).transferFrom(msg.sender, address(this), amtB);
         }
 
-        _grantRole(LP_ROLE, msg.sender);
+
 
         invariant =
             ERC20(tokenA).balanceOf(address(this)) *
